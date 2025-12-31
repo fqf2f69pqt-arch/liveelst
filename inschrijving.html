@@ -1,0 +1,265 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice 4.1.16  (Unix)">
+	<META NAME="AUTHOR" CONTENT="Coen Hoogveld">
+	<META NAME="CREATED" CONTENT="20251231;16113100">
+	<META NAME="CHANGEDBY" CONTENT="Coen Hoogveld">
+	<META NAME="CHANGED" CONTENT="20251231;16115600">
+	<STYLE TYPE="text/css">
+	<!--
+		@page { margin: 2cm }
+		P { margin-bottom: 0.21cm }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="nl-NL" DIR="LTR">
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">---</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">## 3. inschrijving.html (Inschrijven
+als deelnemer)</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">```html</P>
+<P STYLE="margin-bottom: 0cm">&lt;!DOCTYPE html&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;html lang=&quot;nl&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;head&gt;</P>
+<P STYLE="margin-bottom: 0cm">  &lt;meta charset=&quot;UTF-8&quot; /&gt;</P>
+<P STYLE="margin-bottom: 0cm">  &lt;meta name=&quot;viewport&quot;
+content=&quot;width=device-width, initial-scale=1&quot; /&gt;</P>
+<P STYLE="margin-bottom: 0cm">  &lt;title&gt;Inschrijven -
+Straatmuzikantenfestival Elst&lt;/title&gt;</P>
+<P STYLE="margin-bottom: 0cm">  &lt;style&gt;</P>
+<P STYLE="margin-bottom: 0cm">    body {</P>
+<P STYLE="margin-bottom: 0cm">      font-family: 'Arial', sans-serif;</P>
+<P STYLE="margin-bottom: 0cm">      max-width: 600px;</P>
+<P STYLE="margin-bottom: 0cm">      margin: 2rem auto;</P>
+<P STYLE="margin-bottom: 0cm">      padding: 0 1rem;</P>
+<P STYLE="margin-bottom: 0cm">      background-color: #f8f9fa;</P>
+<P STYLE="margin-bottom: 0cm">      color: #333;</P>
+<P STYLE="margin-bottom: 0cm">    }</P>
+<P STYLE="margin-bottom: 0cm">    header {</P>
+<P STYLE="margin-bottom: 0cm">      text-align: center;</P>
+<P STYLE="margin-bottom: 0cm">      color: #2a8fbd;</P>
+<P STYLE="margin-bottom: 0cm">      margin-bottom: 2rem;</P>
+<P STYLE="margin-bottom: 0cm">    }</P>
+<P STYLE="margin-bottom: 0cm">    nav {</P>
+<P STYLE="margin-bottom: 0cm">      background-color: #145374;</P>
+<P STYLE="margin-bottom: 0cm">      display: flex;</P>
+<P STYLE="margin-bottom: 0cm">      justify-content: center;</P>
+<P STYLE="margin-bottom: 0cm">      gap: 1rem;</P>
+<P STYLE="margin-bottom: 0cm">      padding: 0.5rem 0;</P>
+<P STYLE="margin-bottom: 0cm">      margin-bottom: 2rem;</P>
+<P STYLE="margin-bottom: 0cm">    }</P>
+<P STYLE="margin-bottom: 0cm">    nav a {</P>
+<P STYLE="margin-bottom: 0cm">      color: white;</P>
+<P STYLE="margin-bottom: 0cm">      text-decoration: none;</P>
+<P STYLE="margin-bottom: 0cm">      font-weight: bold;</P>
+<P STYLE="margin-bottom: 0cm">      padding: 0.5rem 1rem;</P>
+<P STYLE="margin-bottom: 0cm">      border-radius: 4px;</P>
+<P STYLE="margin-bottom: 0cm">    }</P>
+<P STYLE="margin-bottom: 0cm">    nav a:hover {</P>
+<P STYLE="margin-bottom: 0cm">      background-color: #103651;</P>
+<P STYLE="margin-bottom: 0cm">    }</P>
+<P STYLE="margin-bottom: 0cm">    form {</P>
+<P STYLE="margin-bottom: 0cm">      background-color: white;</P>
+<P STYLE="margin-bottom: 0cm">      padding: 1.5rem;</P>
+<P STYLE="margin-bottom: 0cm">      border-radius: 6px;</P>
+<P STYLE="margin-bottom: 0cm">      box-shadow: 0 0 10px
+rgba(0,0,0,0.1);</P>
+<P STYLE="margin-bottom: 0cm">    }</P>
+<P STYLE="margin-bottom: 0cm">    label {</P>
+<P STYLE="margin-bottom: 0cm">      display: block;</P>
+<P STYLE="margin-bottom: 0cm">      margin-bottom: 0.3rem;</P>
+<P STYLE="margin-bottom: 0cm">      font-weight: bold;</P>
+<P STYLE="margin-bottom: 0cm">    }</P>
+<P STYLE="margin-bottom: 0cm">    input, textarea {</P>
+<P STYLE="margin-bottom: 0cm">      width: 100%;</P>
+<P STYLE="margin-bottom: 0cm">      padding: 0.4rem 0.6rem;</P>
+<P STYLE="margin-bottom: 0cm">      margin-bottom: 1rem;</P>
+<P STYLE="margin-bottom: 0cm">      border: 1px solid #ccc;</P>
+<P STYLE="margin-bottom: 0cm">      border-radius: 4px;</P>
+<P STYLE="margin-bottom: 0cm">      font-size: 1rem;</P>
+<P STYLE="margin-bottom: 0cm">    }</P>
+<P STYLE="margin-bottom: 0cm">    button {</P>
+<P STYLE="margin-bottom: 0cm">      background-color: #2a8fbd;</P>
+<P STYLE="margin-bottom: 0cm">      color: white;</P>
+<P STYLE="margin-bottom: 0cm">      border: none;</P>
+<P STYLE="margin-bottom: 0cm">      padding: 0.7rem 1.3rem;</P>
+<P STYLE="margin-bottom: 0cm">      font-size: 1rem;</P>
+<P STYLE="margin-bottom: 0cm">      border-radius: 4px;</P>
+<P STYLE="margin-bottom: 0cm">      cursor: pointer;</P>
+<P STYLE="margin-bottom: 0cm">    }</P>
+<P STYLE="margin-bottom: 0cm">    button:hover {</P>
+<P STYLE="margin-bottom: 0cm">      background-color: #1d677f;</P>
+<P STYLE="margin-bottom: 0cm">    }</P>
+<P STYLE="margin-bottom: 0cm">    .success {</P>
+<P STYLE="margin-bottom: 0cm">      background-color: #d4edda;</P>
+<P STYLE="margin-bottom: 0cm">      border: 1px solid #c3e6cb;</P>
+<P STYLE="margin-bottom: 0cm">      color: #155724;</P>
+<P STYLE="margin-bottom: 0cm">      padding: 0.8rem;</P>
+<P STYLE="margin-bottom: 0cm">      margin-bottom: 1rem;</P>
+<P STYLE="margin-bottom: 0cm">      border-radius: 4px;</P>
+<P STYLE="margin-bottom: 0cm">    }</P>
+<P STYLE="margin-bottom: 0cm">  &lt;/style&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;/head&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;body&gt;</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">  &lt;header&gt;</P>
+<P STYLE="margin-bottom: 0cm">    &lt;h1&gt;Inschrijven als
+straatmuzikant&lt;/h1&gt;</P>
+<P STYLE="margin-bottom: 0cm">  &lt;/header&gt;</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">  &lt;nav&gt;</P>
+<P STYLE="margin-bottom: 0cm">    &lt;a href=&quot;index.html&quot;&gt;Home&lt;/a&gt;</P>
+<P STYLE="margin-bottom: 0cm">    &lt;a
+href=&quot;voorwaarden.html&quot;&gt;Voorwaarden&lt;/a&gt;</P>
+<P STYLE="margin-bottom: 0cm">    &lt;a
+href=&quot;inschrijving.html&quot;&gt;Inschrijven&lt;/a&gt;</P>
+<P STYLE="margin-bottom: 0cm">    &lt;a
+href=&quot;deelnemers.html&quot;&gt;Deelnemers&lt;/a&gt;</P>
+<P STYLE="margin-bottom: 0cm">  &lt;/nav&gt;</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">  &lt;main&gt;</P>
+<P STYLE="margin-bottom: 0cm">    &lt;form id=&quot;inschrijvingsForm&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">      &lt;div&gt;</P>
+<P STYLE="margin-bottom: 0cm">        &lt;label for=&quot;naam&quot;&gt;Naam
+/ Bandnaam *&lt;/label&gt;</P>
+<P STYLE="margin-bottom: 0cm">        &lt;input type=&quot;text&quot;
+id=&quot;naam&quot; name=&quot;naam&quot; required /&gt;</P>
+<P STYLE="margin-bottom: 0cm">      &lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm">      &lt;div&gt;</P>
+<P STYLE="margin-bottom: 0cm">        &lt;label
+for=&quot;email&quot;&gt;E-mailadres *&lt;/label&gt;</P>
+<P STYLE="margin-bottom: 0cm">        &lt;input type=&quot;email&quot;
+id=&quot;email&quot; name=&quot;email&quot; required /&gt;</P>
+<P STYLE="margin-bottom: 0cm">      &lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm">      &lt;div&gt;</P>
+<P STYLE="margin-bottom: 0cm">        &lt;label for=&quot;genre&quot;&gt;Genre
+/ Muziekstijl&lt;/label&gt;</P>
+<P STYLE="margin-bottom: 0cm">        &lt;input type=&quot;text&quot;
+id=&quot;genre&quot; name=&quot;genre&quot; placeholder=&quot;bijvoorbeeld
+folk, jazz, pop&quot; /&gt;</P>
+<P STYLE="margin-bottom: 0cm">      &lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm">      &lt;div&gt;</P>
+<P STYLE="margin-bottom: 0cm">        &lt;label
+for=&quot;omschrijving&quot;&gt;Korte omschrijving van jullie
+act&lt;/label&gt;</P>
+<P STYLE="margin-bottom: 0cm">        &lt;textarea id=&quot;omschrijving&quot;
+name=&quot;omschrijving&quot; rows=&quot;4&quot; placeholder=&quot;Vertel
+iets over je muziek, je instrumenten, etc.&quot;&gt;&lt;/textarea&gt;</P>
+<P STYLE="margin-bottom: 0cm">      &lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm">      &lt;button
+type=&quot;submit&quot;&gt;Inschrijven&lt;/button&gt;</P>
+<P STYLE="margin-bottom: 0cm">    &lt;/form&gt;</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">    &lt;div id=&quot;melding&quot;
+aria-live=&quot;polite&quot; style=&quot;margin-top: 1rem;&quot;&gt;&lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm">  &lt;/main&gt;</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">  &lt;footer style=&quot;text-align:center;
+margin-top: 4rem; padding: 1rem; font-size: 0.9rem; color: #555;
+border-top: 1px solid #ddd;&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">    &amp;copy; 2024
+Straatmuzikantenfestival Elst</P>
+<P STYLE="margin-bottom: 0cm">  &lt;/footer&gt;</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">  &lt;script&gt;</P>
+<P STYLE="margin-bottom: 0cm">    const form =
+document.getElementById('inschrijvingsForm');</P>
+<P STYLE="margin-bottom: 0cm">    const melding =
+document.getElementById('melding');</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">    form.addEventListener('submit', e
+=&gt; {</P>
+<P STYLE="margin-bottom: 0cm">      e.preventDefault();</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">      const naam =
+form.naam.value.trim();</P>
+<P STYLE="margin-bottom: 0cm">      const email =
+form.email.value.trim();</P>
+<P STYLE="margin-bottom: 0cm">      const genre =
+form.genre.value.trim();</P>
+<P STYLE="margin-bottom: 0cm">      const omschrijving =
+form.omschrijving.value.trim();</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">      if (!naam || !email) {</P>
+<P STYLE="margin-bottom: 0cm">        melding.textContent = 'Vul
+alstublieft de verplichte velden in.';</P>
+<P STYLE="margin-bottom: 0cm">        melding.style.color =
+'#b00020';</P>
+<P STYLE="margin-bottom: 0cm">        return;</P>
+<P STYLE="margin-bottom: 0cm">      }</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">      // Valideer eenvoudig het
+e-mailadres</P>
+<P STYLE="margin-bottom: 0cm">      const emailRegex =
+/^[^\s@]+@[^\s@]+\.[^\s@]+$/;</P>
+<P STYLE="margin-bottom: 0cm">      if (!emailRegex.test(email)) {</P>
+<P STYLE="margin-bottom: 0cm">        melding.textContent = 'Voer een
+geldig e-mailadres in.';</P>
+<P STYLE="margin-bottom: 0cm">        melding.style.color =
+'#b00020';</P>
+<P STYLE="margin-bottom: 0cm">        return;</P>
+<P STYLE="margin-bottom: 0cm">      }</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">      // Haal bestaande deelnemers op
+uit localStorage</P>
+<P STYLE="margin-bottom: 0cm">      let deelnemers =
+JSON.parse(localStorage.getItem('deelnemersElst2024')) || [];</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">      // Check of naam of e-mail al
+bestaat (dubbel inschrijven voorkomen)</P>
+<P STYLE="margin-bottom: 0cm">      const bestaat = deelnemers.some(d
+=&gt; d.email.toLowerCase() === email.toLowerCase() ||
+d.naam.toLowerCase() === naam.toLowerCase());</P>
+<P STYLE="margin-bottom: 0cm">      if (bestaat) {</P>
+<P STYLE="margin-bottom: 0cm">        melding.textContent = 'Deze
+naam of e-mailadres is al geregistreerd.';</P>
+<P STYLE="margin-bottom: 0cm">        melding.style.color =
+'#b00020';</P>
+<P STYLE="margin-bottom: 0cm">        return;</P>
+<P STYLE="margin-bottom: 0cm">      }</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">      // Voeg nieuwe deelnemer toe</P>
+<P STYLE="margin-bottom: 0cm">      deelnemers.push({ naam, email,
+genre, omschrijving });</P>
+<P STYLE="margin-bottom: 0cm">     
+localStorage.setItem('deelnemersElst2024',
+JSON.stringify(deelnemers));</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">      melding.textContent = `Bedankt
+voor je inschrijving, ${naam}! We nemen snel contact met je op.`;</P>
+<P STYLE="margin-bottom: 0cm">      melding.className = 'success';</P>
+<P STYLE="margin-bottom: 0cm">      melding.style.color = '#155724';</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">      form.reset();</P>
+<P STYLE="margin-bottom: 0cm">    });</P>
+<P STYLE="margin-bottom: 0cm">  &lt;/script&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;/body&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;/html&gt;</P>
+<P STYLE="margin-bottom: 0cm">```</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+</BODY>
+</HTML>
